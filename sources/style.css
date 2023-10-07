@@ -11,8 +11,7 @@ section {
   padding: 130px;
 }
 .landing-page img {
-  width: 450px;
-  border-radius: 250px;
+  width: 500px;
   border: 1px solid rgba(32, 34, 33, 0.6);
   float: right;
 }
@@ -114,13 +113,13 @@ section {
     padding: 40px 30px;
   }
   .grid {
-    display: flex;
-    flex-direction: column-reverse;
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
   .landing-page {
     text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .landing-page img {
     width: 300px;
