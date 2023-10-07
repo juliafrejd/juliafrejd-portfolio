@@ -8,10 +8,10 @@ body {
 }
 section {
   margin: 0 auto;
-  padding: 130px;
+  padding: 100px;
 }
 .landing-page img {
-  width: 500px;
+  width: 510px;
   border: 1px solid rgba(32, 34, 33, 0.6);
   float: right;
 }
@@ -23,25 +23,29 @@ section {
   margin: 0;
   padding: 0;
 }
-.landing-page h3 {
+.landing-page h1 {
   font-weight: 700;
   font-size: 44px;
   margin: 0;
   padding: 0;
 }
 .landing-page p {
-  width: 450px;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 .grid {
   display: grid;
-  grid-gap: 64px;
+  grid-gap: 30px;
 }
 .grid-2 {
   grid-template-columns: 1fr 1fr;
 }
-
+.grid-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.portfolio {
+  background-color: rgb(255, 255, 255);
+}
 .portfolio img {
   max-width: 100%;
 }
@@ -61,7 +65,7 @@ section {
 }
 .portfolio h4 {
   font-weight: 700;
-  font-size: 34px;
+  font-size: 24px;
   margin: 0;
 }
 .portfolio h5 {
@@ -73,21 +77,19 @@ section {
   font-size: 16px;
   line-height: 1.6;
 }
-.portfolio {
-  background-color: rgb(241, 242, 245);
-}
 .portfolio-grid {
   background-color: white;
-  margin-top: 30px;
+  margin-top: 40px;
+  border: 1px solid rgba(32, 34, 33, 0.3);
 }
 .portfolio-grid-container {
-  padding: 30px;
+  padding: 10px 30px;
 }
 .grid-3-equal-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .landing-page-button {
-  background-color: rgb(33, 86, 199);
+  background-color: rgb(86, 155, 51);
   text-transform: uppercase;
   color: white;
   text-decoration: none;
@@ -97,7 +99,7 @@ section {
   text-align: center;
 }
 .website-button {
-  background-color: rgb(33, 86, 199);
+  background-color: rgb(86, 155, 51);
   text-transform: uppercase;
   color: white;
   text-decoration: none;
@@ -112,9 +114,12 @@ section {
   section {
     padding: 40px 30px;
   }
-  .grid {
+  .grid-2 {
     grid-template-columns: 1fr;
-    grid-gap: 32px;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 22px;
   }
   .landing-page {
     text-align: center;
@@ -126,15 +131,22 @@ section {
     border-radius: 300px;
     float: none;
   }
-  .landing-page h3 {
+  .landing-page h1 {
     font-size: 26px;
     margin: 10px 0;
   }
-  .landing-page p {
+  .landing-page-text p {
     margin: 0 auto;
-    width: 100%;
+    max-width: 500px;
+    margin-bottom: 15px;
   }
   .landing-page-button {
-    display: block;
+    width: 200px;
+  }
+}
+@media (max-width: 580px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+    grid-gap: 22px;
   }
 }
