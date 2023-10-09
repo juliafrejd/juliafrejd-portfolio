@@ -20,7 +20,13 @@
   <body>
     <main>
       <section class="landing-page">
-        <div class="grid grid-2">
+        <div class="grid">
+          <div>
+            <img
+              src="./images/profile-picture.jpg"
+              alt="Profile picture of Julia Frejd"
+            />
+          </div>
           <div class="landing-page-text">
             <h2>Junior</h2>
             <h1>Front-End React Developer</h1>
@@ -37,208 +43,203 @@
               <br /><br />I consider myself as a passionate problem-solver that
               have redirected the passion in to a career in tech.
             </p>
-          </div>
-          <div>
-            <img
-              src="./images/profile-picture.jpg"
-              alt="Profile picture of Julia Frejd"
-            />
-          </div>
-        </div>
-        <div class="landing-page-icons">
-          <i class="fa-brands fa-html5 fa-2xl" style="color: #dd4b25"></i>
-          <i class="fa-brands fa-css3-alt fa-2xl" style="color: #2d52dd"></i>
-          <i class="fa-brands fa-js fa-2xl" style="color: #efd81d"></i>
-          <i class="fa-brands fa-react fa-2xl" style="color: #9ae1f4"></i>
-          <i class="fa-brands fa-bootstrap fa-2xl" style="color: #7952b3"></i>
-        </div>
-      </section>
-      <section>
-        <div class="about-me grid grid-2">
-          <div>
-            <h2>About me</h2>
-            <h3>Dedicated tech-savvy 👩🏽‍💻</h3>
-            <p>
-              Recently, I successfully completed an intensive course of 8 months
-              at
-              <a href="https://www.shecodes.io/">SheCodes</a> studying Front End
-              Development, equipping me with proficiency in HTML, CSS,
-              JavaScript, and React.js. <br />
-              <br />I have a constant interest to learn more and since my course
-              I have continously been working on my portfolio and building my
-              knowledge about the tech industry. <br />
-            </p>
-            <hr />
-
-            <a href="#" id="randomFact">I am not just a front end developer</a>
-          </div>
-
-          <div>
-            <img
-              src="https://images.pexels.com/photos/8092315/pexels-photo-8092315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Computer on desk"
-            />
+            <div class="landing-page-icons">
+              <i class="fa-brands fa-html5 fa-2xl" style="color: #dd4b25"></i>
+              <i
+                class="fa-brands fa-css3-alt fa-2xl"
+                style="color: #2d52dd"
+              ></i>
+              <i class="fa-brands fa-js fa-2xl" style="color: #efd81d"></i>
+              <i class="fa-brands fa-react fa-2xl" style="color: #9ae1f4"></i>
+              <i
+                class="fa-brands fa-bootstrap fa-2xl"
+                style="color: #7952b3"
+              ></i>
+            </div>
           </div>
         </div>
       </section>
-      <!-- <section class="portfolio">
+      <section class="about-me">
+        <h2>About me</h2>
+        <h3>Dedicated tech-savvy 👩🏽‍💻</h3>
+        <p>
+          Recently, I successfully completed an eight month, intensive course at
+          <a href="https://www.shecodes.io/" target="_blank">SheCodes</a>
+          studying Front End Development, equipping me with strong knowledge in
+          HTML, CSS, JavaScript, React.js and other tools. <br />
+          <br />I have a constant interest to learn more and since my course I
+          have continously been working on my portfolio and building my
+          knowledge about the tech industry. <br />
+        </p>
+        <hr />
+
+        <a href="#" id="randomFact">I am not just a front end developer</a>
+      </section>
+
+      <section class="portfolio">
         <h2>Portfolio</h2>
         <h3>Projects I loved working on 💜</h3>
-        <div class="portfolio-page grid grid-4">
-          <div class="portfolio-grid">
+        <hr />
+        <div class="portfolio-container grid">
+          <div>
+            <h6>SheCodes React</h6>
+            <h4>Weather Application</h4>
+            <p>
+              Search engine getting live data from API of weather and forecast
+              for searched city. Coded mainly with React.js and CSS.
+            </p>
+            <div class="portfolio-container-list-grid">
+              <div>
+                <h5>Tools</h5>
+                <ul>
+                  <li>API - Weather</li>
+                  <li>Bootstrap</li>
+                  <li>GitHub</li>
+                  <li>Netlify</li>
+                  <li>Visual Studio Code</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Code</h5>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>React.js</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
             <a href="https://react-weather-jf.netlify.app/" target="_blank"
               ><img
                 src="images/project-weather-app.png"
                 alt="Screenshot from Weather App"
             /></a>
-            <div class="portfolio-grid-container">
-              <h6 class="portofolio">SheCodes React</h6>
-              <h4>Weather Application</h4>
-              <p>
-                This is a project from SheCode's React workshop. Coded mainly
-                with React.js and CSS. The aim of the project was to construct a
-                website with a search engine, showing the city which users
-                entered with realtime weather and forecast data.
-              </p>
-              <h5>Code</h5>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>React.js</li>
-              </ul>
-              <h5>Tools</h5>
-              <ul>
-                <li>API - Weather</li>
-                <li>Bootstrap</li>
-                <li>GitHub</li>
-                <li>Netlify</li>
-                <li>Visual Studio Code</li>
-              </ul>
-
-              <a
-                class="website-button"
-                href="https://react-weather-jf.netlify.app/"
-                target="_blank"
-                >Go to website</a
-              >
+          </div>
+        </div>
+        <hr />
+        <div class="portfolio-container grid">
+          <div>
+            <h6>SheCodes Responsive</h6>
+            <h4>Analog Photography</h4>
+            <p>
+              A responsive landing page constructed only using HTML & CSS with
+              grids.
+            </p>
+            <div class="portfolio-container-list-grid">
+              <div>
+                <h5>Tools</h5>
+                <ul>
+                  <li>GitHub</li>
+                  <li>Netlify</li>
+                  <li>Embed code - Instagram</li>
+                  <li>Visual Studio Code</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Code</h5>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
             </div>
           </div>
-
-          <div class="portfolio-grid">
-            <a href="https://english-dictionary-jf.netlify.app/" target="_blank"
-              ><img
-                src="images/project-english-dictionary.png"
-                alt="Screenshot from English Dictionary"
-            /></a>
-            <div class="portfolio-grid-container">
-              <h6>SheCodes React</h6>
-              <h4>English Dictionary</h4>
-              <p>
-                This is a project from SheCode's React Add-on workshop. The aim
-                of this project was to build the website mainly with React.js to
-                create a English dicitionary, where a user search for a word and
-                collect that data from a dicitionary API and for images I use
-                Pexel's API.
-              </p>
-
-              <h5>Code</h5>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>React.js</li>
-              </ul>
-              <h5>Tools</h5>
-              <ul>
-                <li>API - Dictionary / Pexels</li>
-                <li>Bootstrap</li>
-                <li>GitHub</li>
-                <li>Netlify</li>
-                <li>Visual Studio Code</li>
-              </ul>
-
-              <a
-                class="website-button"
-                href="https://english-dictionary-jf.netlify.app/"
-                target="_blank"
-                >Go to website</a
-              >
-            </div>
-          </div>
-          <div class="portfolio-grid">
+          <div>
             <a href="https://analog-photography.netlify.app" target="_blank"
               ><img
                 src="images/project-analog-photography.png"
-                alt="Screenshot from Analog Photography"
-                class="img-responsive"
+                alt="Screenshot from Analog Photography App"
             /></a>
-            <div class="portfolio-grid-container">
-              <h6>SheCodes Responsive</h6>
-              <h4>Analog Photography</h4>
-              <p>
-                This is a project from SheCode's Responsive workshop challenged
-                us to construct a website that was responsive only using HTML &
-                CSS. This project is build with grids. Also creating grid
-                together with Instagram's function to embed content inside my
-                HTML.
-              </p>
-              <h5>Code</h5>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Embedded code / Instagram</li>
-              </ul>
-              <h5>Tools</h5>
-              <ul>
-                <li>GitHub</li>
-                <li>Netlify</li>
-                <li>Instagram Embed</li>
-                <li>Visual Studio Code</li>
-              </ul>
 
-              <a
-                class="website-button"
-                href="https://analog-photography.netlify.app"
-                target="_blank"
-                >Go to website</a
-              >
+            <!---->
+          </div>
+        </div>
+        <hr />
+        <div class="portfolio-container grid">
+          <div>
+            <h6>SheCodes React</h6>
+            <h4>English Dictionary</h4>
+            <p>
+              A project with the aim to create a dictionary mainly with
+              React.js. Application is getting data from SheCode's dictionary
+              API and Pexel's API.
+            </p>
+            <div class="portfolio-container-list-grid">
+              <div>
+                <h5>Tools</h5>
+                <ul>
+                  <li>API - Dictionary / Pexels</li>
+                  <li>GitHub</li>
+                  <li>Netlify</li>
+                  <li>Visual Studio Code</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Code</h5>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>React.js</li>
+                </ul>
+              </div>
             </div>
           </div>
+          <div>
+            <a href="https://english-dictionary-jf.netlify.app/" target="_blank"
+              ><img
+                src="images/project-english-dictionary.png"
+                alt="Screenshot from English Dictionary App"
+            /></a>
 
-          <div class="portfolio-grid">
+            <!---->
+          </div>
+        </div>
+        <hr />
+
+        <div class="portfolio-container grid">
+          <div>
+            <h6>SheCodes Plus</h6>
+            <h4>World Clock</h4>
+            <p>
+              An app created to show the time in every chosen city. Coded in
+              HTML, CSS and vanilla JavaScript.
+            </p>
+            <div class="portfolio-container-list-grid">
+              <div>
+                <h5>Tools</h5>
+                <ul>
+                  <li>GitHub</li>
+                  <li>Netlify</li>
+                  <li>Visual Studio Code</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Code</h5>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
             <a href="https://world-clock-project-jf.netlify.app" target="_blank"
               ><img
                 src="images/project-world-clock.png"
-                alt="Screenshot from World Clock project"
+                alt="Screenshot from Word Clock app"
             /></a>
-            <div class="portfolio-grid-container">
-              <h6>SheCodes Plus</h6>
-              <h4>World Clock</h4>
-              <p>
-                Creating an app showing the time in every chosen city. Creating
-                functions in vanilla Javascript to catch real time and display
-                accordingly in for every city.
-              </p>
-              <h5>Code</h5>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-              <h5>Tools</h5>
-              <ul>
-                <li>GitHub</li>
-                <li>Netlify</li>
-                <li>Visual Studio Code</li>
-              </ul>
 
-              <a
-                class="website-button"
-                href="https://world-clock-project-jf.netlify.app"
-                target="_blank"
-                >Go to website</a
-              >
-            </div>
+            <!---->
           </div>
+        </div>
+        <hr />
+      </section>
+      <!-- <section class="portfolio">
+        
+        
+            
           <div class="portfolio-grid">
             <a
               href="https://favourite-restaurant-challenge.netlify.app/"
@@ -322,6 +323,28 @@
           </div>
         </div>
       </section>-->
+      <section class="footer">
+        <h2>Contact me</h2>
+        <h3>Let's connect!</h3>
+        <ul>
+          <li>
+            <a href="mailto:julia.frejd@outlook.com">julia.frejd@outlook.com</a>
+          </li>
+          <a href="https://github.com/juliafrejd" target="_blank"
+            ><i class="fa-brands fa-github fa-xl"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/julia-frejd/" target="_blank"
+            ><i class="fa-brands fa-linkedin fa-xl"></i
+          ></a>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1Onx9Wl-Mq-gk53PvlZf_nsWsvlJlWR0q/view?usp=sharing"
+              target="_blank"
+              >Read my resume</a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
