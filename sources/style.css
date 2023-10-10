@@ -2,6 +2,7 @@
   --primary-font: "Poppins", sans-serif;
   --seconday-font: "Source Code Pro", monospace;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -34,7 +35,8 @@ section h3 {
 }
 hr {
   margin: 10px 0;
-  opacity: 0.6;
+  opacity: 0.4;
+  padding-bottom: 20px;
 }
 .navbar {
   background-color: white !important;
@@ -102,8 +104,9 @@ hr {
 .landing-page a,
 .about-me a,
 .footer a {
-  font-weight: 600;
   color: #322433;
+  text-decoration: none;
+  font-weight: 600;
   transition: ease-in-out 0.2s;
 }
 .landing-page a:hover,
@@ -111,7 +114,33 @@ hr {
 .footer a:hover {
   color: rgb(179, 37, 179);
 }
-
+.tab-box {
+  display: flex;
+}
+.tab-box .tab-btn {
+  color: #322433;
+  background-color: white;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 60px 20px 0;
+  opacity: 0.4;
+  padding: 0;
+  transition: ease-in-out 0.2s;
+}
+.tab-box .tab-btn:hover {
+  text-decoration: underline;
+}
+.tab-box .tab-btn.active {
+  opacity: 1;
+  text-decoration: underline;
+}
+.content {
+  display: none;
+}
+.content-box .content.active {
+  display: block;
+}
 .portfolio-container {
   padding: 40px 0;
 }
@@ -203,6 +232,10 @@ hr {
     flex-direction: column-reverse !important;
   }
 
+  .tab-box .tab-btn {
+    font-size: 14px;
+    width: 100%;
+  }
   .about-me img {
     display: none;
   }
