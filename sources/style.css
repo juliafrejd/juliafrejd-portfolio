@@ -49,6 +49,9 @@ hr {
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
 }
+#portfolio {
+  padding: 0;
+}
 .portfolio-container-list-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
