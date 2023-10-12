@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Code+Pro:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="sources/script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/3110f50c06.js"
       crossorigin="anonymous"
@@ -30,100 +31,15 @@
   </head>
   <body>
     <header>
-      <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html#">juliafrejd.dev</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                juliafrejd.dev
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html#about"
-                    >About</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html#portfolio"
-                    >Portfolio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html#contact"
-                    >Contact</a
-                  >
-                </li>
-                <hr />
-                <li class="nav-item">
-                  <a
-                    target="_blank"
-                    class="nav-link"
-                    href="https://drive.google.com/file/d/1Onx9Wl-Mq-gk53PvlZf_nsWsvlJlWR0q/view?usp=sharing"
-                    >Resume</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    target="_blank"
-                    class="nav-link"
-                    href="https://github.com/juliafrejd"
-                    >GitHub</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    target="_blank"
-                    class="nav-link"
-                    href="https://www.linkedin.com/in/julia-frejd/"
-                    >LinkedIn</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    target="_blank"
-                    class="nav-link"
-                    href="https://www.shecodes.io/graduates/63433-julia-frejd"
-                    >SheCodes profile</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <div class="topnav" id="myTopnav">
+        <a href="#"><h1 class="logo">juliafrejd.dev</h1></a>
+        <a href="#contact" class="second-child split">Contact</a>
+        <a href="#portfolio" class="split">Portfolio</a
+        ><a href="#about" class="split">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </a>
+      </div>
     </header>
     <main>
       <section class="landing-page">
@@ -180,25 +96,25 @@
         </p>
       </section>
 
-      <section class="tab">
-        <div class="portfolio container" id="portfolio">
+      <section class="tab" id="portfolio">
+        <div class="portfolio container">
           <h2>Portfolio</h2>
           <h3>Projects I loved working on 💜</h3>
           <div class="tab-box">
             <button class="tab-btn active">My own projects</button>
-            <button class="tab-btn">Customer Projects</button>
-            <button class="tab-btn">SheCode Projects</button>
+            <button class="tab-btn">Happy Customers</button>
+            <button class="tab-btn">SheCodes Projects</button>
           </div>
           <hr />
           <div class="content-box">
             <div class="content active content-my-own-project">
               <h2>Project</h2>
-              <h3>Fictive companies</h3>
+              <h3>Fictive projects</h3>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
-                illo, doloribus ad sequi consequuntur, dignissimos perferendis
-                hic ipsum ipsa nesciunt totam! Sed sint, qui quidem facilis
-                autem earum eum enim!
+                Creating projects to boozt my own knowledge. Practising HTML,
+                CSS and JavaScript at the same time to be able to show my
+                capacity of designing and creating beautiful landing pages from
+                scratch and to host them openly for everyone to see.
               </p>
               <hr />
               <div class="portfolio-container-grid grid">
@@ -280,7 +196,7 @@
               <hr />
               <div class="portfolio-container-grid grid">
                 <div>
-                  <h6>SheCode Challenge</h6>
+                  <h6>SheCodes Challenge</h6>
                   <h4>Favourite Restaurant</h4>
                   <p>
                     A responsive landing page constructed for a fictive
@@ -320,19 +236,18 @@
 
             <div class="content content-customer">
               <h2>Project</h2>
-              <h3>Happy customers</h3>
+              <h3>Customer projects</h3>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
-                illo, doloribus ad sequi consequuntur, dignissimos perferendis
-                hic ipsum ipsa nesciunt totam! Sed sint, qui quidem facilis
-                autem earum eum enim!
+                Customer website created and coded by me. Coded mainly in HTML,
+                CSS and JavaScript. Hosted via privatley via GitHub.
               </p>
               <hr />
+              <h2>Work in progress..</h2>
             </div>
 
             <div class="content content-shecodes">
               <h2>Project</h2>
-              <h3>SheCode Homework Projects</h3>
+              <h3>SheCodes Homework Projects</h3>
               <p>
                 SheCodes homework projects from basic HTML, CSS and JavaScript
                 to be confident in React.js, responsive design, hosting, SEO and
@@ -426,7 +341,7 @@
                   <h4>English Dictionary</h4>
                   <p>
                     A project with the aim to create a dictionary mainly with
-                    React.js. Application is getting data from SheCode's
+                    React.js. Application is getting data from SheCodes
                     dictionary API and Pexel's API.
                   </p>
                   <div class="portfolio-container-list-grid">
@@ -537,23 +452,5 @@
         </ul>
       </section>
     </main>
-    <script type="text/javascript">
-      const tabs = document.querySelectorAll(".tab-btn");
-      const allContent = document.querySelectorAll(".content");
-
-      tabs.forEach((tab, index) => {
-        tab.addEventListener("click", () => {
-          tabs.forEach((tab) => {
-            tab.classList.remove("active");
-          });
-          tab.classList.add("active");
-
-          allContent.forEach((content) => {
-            content.classList.remove("active");
-          });
-          allContent[index].classList.add("active");
-        });
-      });
-    </script>
   </body>
 </html>
