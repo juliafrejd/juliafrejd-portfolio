@@ -84,9 +84,6 @@ hr {
   position: absolute;
   z-index: 2;
 }
-#text {
-  color: var(--highlight-color);
-}
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -106,17 +103,23 @@ hr {
 .landing-page h1 {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 44px;
   line-height: 1.1;
   margin: 0 0 20px 0;
   padding: 0;
   max-width: 500px;
 }
-.landing-page a {
-  margin: 5px 15px 5px 0;
+.landing-page a i {
+  padding: 30px 0;
+  margin: 5px 35px 5px 0;
+  font-size: 40px;
 }
 .landing-page a:hover {
   color: rgb(179, 37, 179);
+}
+#text {
+  color: var(--highlight-color);
+  font-size: 74px;
 }
 .landing-page p,
 .about-me p,
@@ -302,11 +305,14 @@ hr {
     margin: 0 auto;
   }
   .landing-page h1 {
-    font-size: 46px;
+    font-size: 26px;
     margin: 10px auto;
   }
   .landing-page a {
     margin: 15px;
+  }
+  #text {
+    font-size: 56px;
   }
   .landing-page-icons i {
     padding: 10px 10px 0 10px;
@@ -321,7 +327,7 @@ hr {
   }
   .tab-box .tab-btn {
     margin: 0 5px;
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
   }
   .about-me img {

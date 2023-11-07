@@ -1,13 +1,13 @@
 const tabs = document.querySelectorAll(".tab-btn");
 const allContent = document.querySelectorAll(".content");
 
-const words = ["Front-End", "React", "Creative"];
+const words = ["React", "Tech-Savvy", "Creative", "Junior"];
 let index = 0;
 
 const change = () => {
   document.getElementById("text").innerHTML = words[index];
   index = ++index % words.length;
-  setTimeout(change, 2000);
+  setTimeout(change, 1500);
 };
 
 change();
