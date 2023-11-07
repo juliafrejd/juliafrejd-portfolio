@@ -1,6 +1,17 @@
 const tabs = document.querySelectorAll(".tab-btn");
 const allContent = document.querySelectorAll(".content");
 
+const words = ["Front-End", "React", "Creative"];
+let index = 0;
+
+const change = () => {
+  document.getElementById("text").innerHTML = words[index];
+  index = ++index % words.length;
+  setTimeout(change, 2000);
+};
+
+change();
+
 tabs.forEach((tab, index) => {
   tab.addEventListener("click", () => {
     tabs.forEach((tab) => {

@@ -48,7 +48,7 @@ hr {
   background-color: white;
 }
 .topnav a:not(:first-child) {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .topnav a {
   float: left;
@@ -79,12 +79,14 @@ hr {
   position: absolute;
   z-index: 2;
 }
+#text {
+  color: rgb(179, 37, 179);
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
 }
-
 .portfolio-container-list-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -152,12 +154,12 @@ hr {
   color: #322433;
   background-color: white;
   border: none;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   margin: 20px 60px 20px 0;
   opacity: 0.4;
   padding: 0;
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.3s;
 }
 .tab-box .tab-btn:hover {
   text-decoration: underline;
@@ -165,6 +167,8 @@ hr {
 .tab-box .tab-btn.active {
   opacity: 1;
   text-decoration: underline;
+  font-weight: 700;
+  color: rgb(179, 37, 179);
 }
 .content {
   display: none;
